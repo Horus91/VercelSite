@@ -5,12 +5,12 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     # the files should be in a directory called templates
-    return render_template('/website/home.html')
+    return render_template('home.html')
 
 
 @app.route('/about/')
 def about():
-    return render_template('/website/about.html')
+    return render_template('about.html')
 
 
 if __name__ == '__main__':
